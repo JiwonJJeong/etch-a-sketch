@@ -22,7 +22,7 @@ function generateGrid(squaresPerEdge){
 }
 
 function doHoverEffect(event){
-    event.target.style.backgroundColor = "red"
+    event.target.style.backgroundColor = "black"
 }
 
 // initial grid generation to 16x16

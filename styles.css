@@ -8,6 +8,8 @@
     max-height: 100vh;
     max-width: 100vw;
     gap: 1px;
+    border: solid 1px gray;
+    background-color: gray;
 }
 
 /* flex box for squares in each row*/
@@ -17,7 +19,7 @@
 }
 
 .square{
-    background-color:aqua;
+    background-color: white;
     flex: 1 1 1px;  
     aspect-ratio: 1/1; /* keeps them squares */
 }
