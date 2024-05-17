@@ -8,9 +8,17 @@ for (let i = 0; i<16; i++){
     const rowToAdd = document.createElement("div");
     rowToAdd.classList.add("row");
     for (let j =0; j<16;j++){
+        // create 1 square in the row and add an event listener for hover
         const boxToAdd = document.createElement("div");
         boxToAdd.classList.add("square");
+        boxToAdd.addEventListener("mouseover", function(event) {
+            doHoverEffect(event);
+        });
         rowToAdd.appendChild(boxToAdd);
     }
     container.appendChild(rowToAdd);
+}
+
+function doHoverEffect(event){
+    event.target.style.backgroundColor = "red"
 }
