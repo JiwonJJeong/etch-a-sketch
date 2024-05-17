@@ -18,6 +18,6 @@
 
 .square{
     background-color:aqua;
-    flex: 1 1 30px;  
+    flex: 1 1 1px;  
     aspect-ratio: 1/1; /* keeps them squares */
 }
