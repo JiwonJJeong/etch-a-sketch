@@ -22,7 +22,9 @@ function generateGrid(squaresPerEdge){
 }
 
 function doHoverEffect(event){
-    event.target.style.backgroundColor = "black"
+    let previousOpacity = Number(event.target.style.opacity);
+    console.log(previousOpacity);
+    event.target.style.opacity = (previousOpacity + .1);
 }
 
 // initial grid generation to 16x16
